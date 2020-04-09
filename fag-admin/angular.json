@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "fag-admin": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fag-admin"
+    }
+  },
+  "defaultProject": "fag-admin",
+  "cli": {
+    "analytics": "568eff14-d364-4807-9200-9331179ccae7"
+  }
 }
