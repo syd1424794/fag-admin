@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './assets/scss/variables.scss';
+
+html { font-size: 62.5%; }
+body {
+  font-size: 1.6rem;
+  font-family: 'Muli', sans-serif; /* =14px */
+  input, select, textarea, button{
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+*{
+  font-family: 'Muli', sans-serif
+}
+
+.btn-primary-full{
+  background: linear-gradient(45deg,$secondary,$primary1);
+  border: 0.1rem solid transparent;
+  border-radius: 3rem;
+  color: #fff;
+  font-size: 1.6rem;
+  width: 100%;
+  color: #fff;
+  height: 3.6rem;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.14), 0 1px 7px 0 rgba(0,0,0,.12), 0 3px 1px -1px rgba(0,0,0,.2);
+}
+
+// Changing style for sidebar accordion
+
+body .sidebar ul li .ui-accordion .ui-accordion-header a{
+  padding: 0;
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+  color: #000 !important;
+}
+
+body .sidebar ul li .ui-accordion .ui-accordion-content{
+  border: none;
+  background: #f9f9f9;
+}
+
+body .sidebar .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon{
+  display: none;
+}

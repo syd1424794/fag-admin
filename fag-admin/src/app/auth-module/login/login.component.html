@@ -1,2 +1,44 @@
-<p>login works!</p>
-<router-outlet></router-outlet>
+<div class="login-container">
+  <div class="login">
+    <h3>Sign In</h3>
+    <form>
+      <div class="group">
+        <div class="icon">
+          <i class="pi pi-user"></i>
+        </div>
+        <div class="input-div">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email</label>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="icon">
+          <i class="pi pi-lock"></i>
+        </div>
+        <div class="input-div">
+          <input type="password" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Password</label>
+        </div>
+      </div>
+
+      <div class="group flex">
+        <p-checkbox name="groupname" value="val1"></p-checkbox>
+        <div class="checkbox-label">Remember Me</div>
+      </div>
+
+      <div class="group">
+        <button class="btn-primary-full">Login</button>
+      </div>
+    </form>
+
+    <div class="login-footer">
+      <a href="#">Register</a>
+      <a href="#">Forgot Password</a>
+    </div>
+  </div>
+</div>

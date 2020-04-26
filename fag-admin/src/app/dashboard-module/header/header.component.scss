@@ -1,0 +1,49 @@
+@import '../../../assets/scss/variables.scss';
+
+.header{
+  background: linear-gradient(45deg,$indigo,$purple);
+  height: 64px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid #ddd;
+  .logo{
+    background: #fff;
+    width: 260px;
+    text-align: center;
+    padding: 5px 15px;
+    img{
+      max-height: 55px;
+    }
+  }
+  .header-content{
+    width: calc(100% - 260px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .search{
+      width: 100%;
+      position: relative;
+      padding: 0 15px;
+      input{
+        width: 100%;
+        background: rgba(255,255,255,.2);
+        height: 45px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        padding: 10px 20px 10px 60px;
+        color: #fff;
+      }
+      i{
+        position: absolute;
+        left: 40px;
+        font-size: 20px;
+        color: #fff;
+        top: 10px;
+      }
+    }
+  }
+}

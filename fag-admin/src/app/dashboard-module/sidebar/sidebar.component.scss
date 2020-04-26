@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variables.scss';
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin: 20px 0;
+  li{
+    a{
+      padding: 10px 15px;
+      display: block;
+      cursor: pointer;
+      color: #333;
+      @include transition(all, .3s);
+      &:hover{
+        text-decoration: none;
+        background: #eee;
+        @include transition(all, .3s);
+      }
+      i{
+        font-size: 18px;
+        color: #777;
+        margin-right: 15px;
+      }
+      &.active{
+        background: linear-gradient(45deg,$indigo,$purple);
+        color: #fff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 3px 3px 20px 0 rgba($purple, .5);
+        @include transition(all, .3s);
+        width: 90%;
+        i{
+          color: #fff;
+        }
+      }
+    }
+  }
+}

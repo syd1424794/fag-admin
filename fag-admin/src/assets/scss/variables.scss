@@ -1,0 +1,19 @@
+$primary: #ff4081;
+$primary1: #ff6e40;
+$secondary: #8e24aa;
+$textLight: #555;
+$textLight1: #777;
+$textLight2: #999;
+$indigo: #303f9f;
+$purple: #7b1fa2;
+
+
+//Mixins
+
+@mixin transition($type, $time) {
+  transition: $type $time;
+  -moz-transition: $type $time;
+  -ms-transition: $type $time;
+  -webkit-transition: $type $time;
+  -o-transition: $type $time;
+}

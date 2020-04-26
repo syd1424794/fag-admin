@@ -1,0 +1,12 @@
+.dashboard{
+  .sidebar{
+    position: fixed;
+    left: 0;
+    width: 260px;
+    background: #fff;
+    height: 100%;
+    padding-top: 64px;
+    z-index: 1;
+    box-shadow: 2px 2px 5px #ccc;
+  }
+}
