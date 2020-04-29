@@ -1,7 +1,7 @@
 @import '../../../assets/scss/variables.scss';
 
 .header{
-  background: linear-gradient(45deg,$indigo,$purple);
+  background: linear-gradient(45deg,$gradientColor1,$gradientColor2);
   height: 64px;
   display: flex;
   position: fixed;
@@ -24,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
     .search{
       width: 100%;
       position: relative;
@@ -36,6 +37,9 @@
         border: 1px solid transparent;
         padding: 10px 20px 10px 60px;
         color: #fff;
+        &::placeholder{
+          color: #fff;
+        }
       }
       i{
         position: absolute;
@@ -43,6 +47,26 @@
         font-size: 20px;
         color: #fff;
         top: 10px;
+      }
+    }
+    .info-icons{
+      min-width: 240px;
+      text-align: right;
+      ul{
+        list-style-type: none;
+        padding-left: 0;
+        margin:0;
+        li{
+          display: inline-block;
+          padding: 0 15px;
+          img{
+            width: 30px;
+          }
+          i{
+            color: #fff;
+            font-size: 20px;
+          }
+        }
       }
     }
   }

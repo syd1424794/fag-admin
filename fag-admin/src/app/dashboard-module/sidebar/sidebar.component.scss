@@ -23,11 +23,11 @@ ul{
         margin-right: 15px;
       }
       &.active{
-        background: linear-gradient(45deg,$indigo,$purple);
+        background: linear-gradient(45deg,$gradientColor1,$gradientColor2);
         color: #fff;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
-        box-shadow: 3px 3px 20px 0 rgba($purple, .5);
+        box-shadow: 3px 3px 20px 0 rgba($gradientColor2, .5);
         @include transition(all, .3s);
         width: 90%;
         i{
