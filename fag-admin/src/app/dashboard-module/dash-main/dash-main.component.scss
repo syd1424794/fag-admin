@@ -10,8 +10,11 @@
     box-shadow: 2px 2px 5px #ccc;
   }
   .main-container{
-    padding: 15px;
+    padding: 64px 0 50px 260px;
     background: #f7f7f7;
-    min-height: calc(100vh - 65px);
+    min-height: 100vh;
+    .content-main{
+      padding: 15px 20px;
+    }
   }
 }

@@ -30,6 +30,14 @@ body {
   box-shadow: 0 3px 3px 0 rgba(0,0,0,.14), 0 1px 7px 0 rgba(0,0,0,.12), 0 3px 1px -1px rgba(0,0,0,.2);
 }
 
+// Overriding Bootstrap container style
+
+.container{
+  width: 100% !important;
+  min-width: auto !important;
+  max-width: auto !important;
+}
+
 // Changing style for sidebar accordion
 
 body .sidebar ul li .ui-accordion .ui-accordion-header a{
@@ -48,3 +56,128 @@ body .sidebar ul li .ui-accordion .ui-accordion-content{
 body .sidebar .ui-accordion .ui-accordion-header a .ui-accordion-toggle-icon{
   display: none;
 }
+
+// HEADINGS
+
+.page-heading{
+  color: $textLight;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section-heading{
+  color: $textLight;
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+// FORM STYLES
+
+.form-container{
+  padding: 24px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 5px $shadowColor;
+  form{
+    .input-div {
+      position:relative;
+      padding: 15px 0 15px;
+    }
+    &.flex{
+      display: flex;
+    }
+    .checkbox-label{
+      margin-left: 1rem;
+      color: $textLight2;
+    }
+    input{
+      font-size:16px;
+      padding:1rem 1rem 1rem 0.5rem;
+      display:block;
+      width:100%;
+      border:none;
+      background: transparent;
+      border-bottom:0.1rem solid #757575;
+    }
+    input:focus 		{ outline:none; }
+
+    /* LABEL ======================================= */
+    label{
+      color:$textLight2;
+      font-size:16px;
+      font-weight:normal;
+      position:absolute;
+      pointer-events:none;
+      left:5px;
+      top:25px;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label 		{
+      top:5px;
+      font-size:1.2rem;
+      color:$primary;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar 	{ position:relative; display:block; width:100%; }
+    .bar:before, .bar:after 	{
+      content:'';
+      height:0.2rem;
+      width:0;
+      bottom:1px;
+      position:absolute;
+      background:$primary;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+    .bar:before {
+      left:50%;
+    }
+    .bar:after {
+      right:50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+      width:50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+      position:absolute;
+      height:60%;
+      width:12.5rem;
+      top:25%;
+      left:0;
+      pointer-events:none;
+      opacity:0.5;
+    }
+
+      /* active state */
+    input:focus ~ .highlight {
+      -webkit-animation:inputHighlighter 0.3s ease;
+      -moz-animation:inputHighlighter 0.3s ease;
+      animation:inputHighlighter 0.3s ease;
+    }
+  }
+}
+
+// FORM STYLE ENDS
+
+// TABLE STYLES
+
+.table-container{
+  padding: 24px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 5px $shadowColor;
+}
+
+// TABLE STYLES ENDS
