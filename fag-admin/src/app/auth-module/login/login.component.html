@@ -4,30 +4,30 @@
     <form>
       <div class="group">
         <div class="icon">
-          <i class="pi pi-user"></i>
+          <i class="material-icons">supervisor_account</i>
         </div>
         <div class="input-div">
-          <input type="text" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Email</label>
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Email" value="">
+          </mat-form-field>
         </div>
       </div>
 
       <div class="group">
         <div class="icon">
-          <i class="pi pi-lock"></i>
+          <i class="material-icons">lock_open</i>
         </div>
         <div class="input-div">
-          <input type="password" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Password</label>
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" type="password" value="">
+          </mat-form-field>
         </div>
       </div>
 
       <div class="group flex">
-        <p-checkbox name="groupname" value="val1"></p-checkbox>
+        <mat-checkbox color="primary"></mat-checkbox>
         <div class="checkbox-label">Remember Me</div>
       </div>
 
