@@ -10,4 +10,8 @@ export class BlogService {
   getBlogs() {
     return this.http.get(`${environment.apiUrl}blogs/all`);
   }
+
+  getSingleBlog(id: number) {
+    return this.http.get(`${environment.apiUrl}blogs/edit/${id}`);
+  }
 }

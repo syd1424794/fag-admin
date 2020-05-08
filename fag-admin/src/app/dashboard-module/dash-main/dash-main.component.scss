@@ -12,7 +12,8 @@
   .main-container{
     padding: 64px 0 50px 260px;
     background: #f7f7f7;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
     .content-main{
       padding: 15px 20px;
     }

@@ -4,13 +4,20 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogService } from './blog.service';
 import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { BlogSingleComponent } from './blog-single/blog-single.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [BlogListComponent],
+  declarations: [BlogListComponent, BlogSingleComponent],
   imports: [
     CommonModule,
     BlogRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonModule,
+    MatIconModule,
+    RouterModule
   ],
   providers: [BlogService]
 })
